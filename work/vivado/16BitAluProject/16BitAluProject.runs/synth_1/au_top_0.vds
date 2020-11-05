@@ -1,0 +1,394 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Nov  6 01:55:15 2020
+# Process ID: 340482
+# Current directory: /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.runs/synth_1
+# Command line: vivado -log au_top_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source au_top_0.tcl
+# Log file: /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.runs/synth_1/au_top_0.vds
+# Journal file: /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source au_top_0.tcl -notrace
+Command: synth_design -top au_top_0 -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 340510
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2089.715 ; gain = 0.000 ; free physical = 945 ; free virtual = 10419
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'au_top_0' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/au_top_0.v:7]
+	Parameter CLKSPEED bound to: 5'b11010 
+	Parameter IDLE_state bound to: 3'b000 
+	Parameter ADD_state bound to: 3'b001 
+	Parameter NORMAL_state bound to: 3'b010 
+	Parameter FAIL_state bound to: 3'b011 
+	Parameter AUTO_state bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'value_store_1' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/value_store_1.v:7]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_2' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/edge_detector_2.v:12]
+	Parameter RISE bound to: 1'b1 
+	Parameter FALL bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_2' (1#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/edge_detector_2.v:12]
+INFO: [Synth 8-6157] synthesizing module 'button_conditioner_3' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/button_conditioner_3.v:13]
+	Parameter CLK_FREQ bound to: 26'b10111110101111000010000000 
+	Parameter MIN_DELAY bound to: 5'b10100 
+	Parameter NUM_SYNC bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'pipeline_8' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/pipeline_8.v:11]
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'pipeline_8' (2#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/pipeline_8.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'button_conditioner_3' (3#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/button_conditioner_3.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'value_store_1' (4#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/value_store_1.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu_4' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/alu_4.v:7]
+INFO: [Synth 8-6157] synthesizing module 'adder_9' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/adder_9.v:7]
+INFO: [Synth 8-226] default block is never used [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/adder_9.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'adder_9' (5#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/adder_9.v:7]
+INFO: [Synth 8-6157] synthesizing module 'boolean_10' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/boolean_10.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'boolean_10' (6#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/boolean_10.v:7]
+INFO: [Synth 8-6157] synthesizing module 'shifter_11' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/shifter_11.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'shifter_11' (7#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/shifter_11.v:7]
+INFO: [Synth 8-6157] synthesizing module 'compare_12' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/compare_12.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'compare_12' (8#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/compare_12.v:7]
+INFO: [Synth 8-226] default block is never used [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/alu_4.v:96]
+INFO: [Synth 8-6155] done synthesizing module 'alu_4' (9#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/alu_4.v:7]
+INFO: [Synth 8-6157] synthesizing module 'auto_tester_5' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/auto_tester_5.v:7]
+	Parameter CLKSPEED bound to: 5'b11010 
+	Parameter START_state bound to: 5'b00000 
+	Parameter ADD_state bound to: 5'b00001 
+	Parameter SUB_state bound to: 5'b00010 
+	Parameter MULTIPLY_state bound to: 5'b00011 
+	Parameter AND_state bound to: 5'b00100 
+	Parameter NAND_state bound to: 5'b00101 
+	Parameter OR_state bound to: 5'b00110 
+	Parameter NOR_state bound to: 5'b00111 
+	Parameter XOR_state bound to: 5'b01000 
+	Parameter XNOR_state bound to: 5'b01001 
+	Parameter A_state bound to: 5'b01010 
+	Parameter SHL_state bound to: 5'b01011 
+	Parameter SHR_state bound to: 5'b01100 
+	Parameter SRA_state bound to: 5'b01101 
+	Parameter CMPEQ_state bound to: 5'b01110 
+	Parameter CMPLT_state bound to: 5'b01111 
+	Parameter CMPLE_state bound to: 5'b10000 
+	Parameter END_state bound to: 5'b10001 
+	Parameter ERROR_state bound to: 5'b10010 
+INFO: [Synth 8-6155] done synthesizing module 'auto_tester_5' (10#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/auto_tester_5.v:7]
+INFO: [Synth 8-6157] synthesizing module 'reset_conditioner_6' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/reset_conditioner_6.v:11]
+	Parameter STAGES bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'reset_conditioner_6' (11#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/reset_conditioner_6.v:11]
+INFO: [Synth 8-6157] synthesizing module 'multi_seven_seg_7' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/multi_seven_seg_7.v:12]
+	Parameter DIGITS bound to: 3'b100 
+	Parameter DIV bound to: 5'b10000 
+	Parameter DIGIT_BITS bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'counter_13' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/counter_13.v:14]
+	Parameter SIZE bound to: 2'b10 
+	Parameter DIV bound to: 5'b10000 
+	Parameter TOP bound to: 4'b0011 
+	Parameter UP bound to: 1'b1 
+	Parameter MAX_VALUE bound to: 20'b00111111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'counter_13' (12#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/counter_13.v:14]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_14' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/seven_seg_14.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_14' (13#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/seven_seg_14.v:7]
+INFO: [Synth 8-6157] synthesizing module 'decoder_15' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/decoder_15.v:11]
+	Parameter WIDTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'decoder_15' (14#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/decoder_15.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'multi_seven_seg_7' (15#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/multi_seven_seg_7.v:12]
+INFO: [Synth 8-226] default block is never used [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/au_top_0.v:179]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/au_top_0.v:163]
+INFO: [Synth 8-6155] done synthesizing module 'au_top_0' (16#1) [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/au_top_0.v:7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2089.715 ; gain = 0.000 ; free physical = 1047 ; free virtual = 10510
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2089.715 ; gain = 0.000 ; free physical = 1044 ; free virtual = 10507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2089.715 ; gain = 0.000 ; free physical = 1044 ; free virtual = 10507
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2089.715 ; gain = 0.000 ; free physical = 1037 ; free virtual = 10500
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/folkloreee/Documents/16BitAluProject/work/constraint/alchitry.xdc]
+Finished Parsing XDC File [/home/folkloreee/Documents/16BitAluProject/work/constraint/alchitry.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/folkloreee/Documents/16BitAluProject/work/constraint/alchitry.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/au_top_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/au_top_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/folkloreee/Documents/alchitry-labs-1.2.0/library/components/au.xdc]
+Finished Parsing XDC File [/home/folkloreee/Documents/alchitry-labs-1.2.0/library/components/au.xdc]
+Parsing XDC File [/home/folkloreee/Documents/16BitAluProject/work/constraint/io.xdc]
+Finished Parsing XDC File [/home/folkloreee/Documents/16BitAluProject/work/constraint/io.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/folkloreee/Documents/16BitAluProject/work/constraint/io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/au_top_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/au_top_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2153.617 ; gain = 0.000 ; free physical = 951 ; free virtual = 10414
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2153.617 ; gain = 0.000 ; free physical = 951 ; free virtual = 10414
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 1014 ; free virtual = 10482
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 1014 ; free virtual = 10482
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 1014 ; free virtual = 10483
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'auto_tester_5'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'au_top_0'
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/auto_tester_5.v:64]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             START_state |              0000000000000000001 |                            00000
+               ADD_state |              0000000000000000010 |                            00001
+               SUB_state |              0000000000000000100 |                            00010
+          MULTIPLY_state |              0000000000000001000 |                            00011
+               AND_state |              0000000000000010000 |                            00100
+              NAND_state |              0000000000000100000 |                            00101
+                OR_state |              0000000000001000000 |                            00110
+               NOR_state |              0000000000010000000 |                            00111
+               XOR_state |              0000000000100000000 |                            01000
+              XNOR_state |              0000000001000000000 |                            01001
+                 A_state |              0000000010000000000 |                            01010
+               SHL_state |              0000000100000000000 |                            01011
+               SHR_state |              0000001000000000000 |                            01100
+               SRA_state |              0000010000000000000 |                            01101
+             CMPEQ_state |              0000100000000000000 |                            01110
+             CMPLT_state |              0001000000000000000 |                            01111
+             CMPLE_state |              0010000000000000000 |                            10000
+               END_state |              0100000000000000000 |                            10001
+             ERROR_state |              1000000000000000000 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'one-hot' in module 'auto_tester_5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              IDLE_state |                              000 |                              000
+               ADD_state |                              001 |                              001
+              FAIL_state |                              010 |                              011
+            NORMAL_state |                              011 |                              010
+              AUTO_state |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'au_top_0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 1003 ; free virtual = 10473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   18 Bit       Adders := 1     
+	   3 Input   16 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   5 Input   24 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 15    
+	  19 Input   20 Bit        Muxes := 1     
+	   5 Input   20 Bit        Muxes := 1     
+	  19 Input   19 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 16    
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 8     
+	   4 Input   16 Bit        Muxes := 6     
+	  19 Input   16 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	  19 Input    6 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	  19 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP out0, operation Mode is: A*B.
+DSP Report: operator out0 is absorbed into DSP out0.
+DSP Report: Generating DSP alu/out0, operation Mode is: A*B.
+DSP Report: operator alu/out0 is absorbed into DSP alu/out0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 979 ; free virtual = 10441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------------+--------------+---------------+----------------+
+|Module Name       | RTL Object   | Depth x Width | Implemented As | 
++------------------+--------------+---------------+----------------+
+|seven_seg_14      | segs         | 32x7          | LUT            | 
+|multi_seven_seg_7 | seg_dec/segs | 32x7          | LUT            | 
++------------------+--------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu_4       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_4       | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 832 ; free virtual = 10293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 808 ; free virtual = 10269
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 807 ; free virtual = 10268
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 807 ; free virtual = 10268
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 807 ; free virtual = 10268
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 807 ; free virtual = 10268
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 807 ; free virtual = 10268
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 807 ; free virtual = 10268
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 807 ; free virtual = 10268
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    45|
+|3     |DSP48E1 |     2|
+|5     |LUT1    |    20|
+|6     |LUT2    |    51|
+|7     |LUT3    |    57|
+|8     |LUT4    |    69|
+|9     |LUT5    |    95|
+|10    |LUT6    |   215|
+|11    |FDRE    |   212|
+|12    |FDSE    |     5|
+|13    |LD      |    19|
+|14    |IBUF    |    30|
+|15    |OBUF    |    45|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 807 ; free virtual = 10268
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2153.617 ; gain = 0.000 ; free physical = 868 ; free virtual = 10329
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2153.617 ; gain = 63.902 ; free physical = 868 ; free virtual = 10329
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2153.617 ; gain = 0.000 ; free physical = 931 ; free virtual = 10401
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2177.633 ; gain = 0.000 ; free physical = 870 ; free virtual = 10347
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  LD => LDCE: 19 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 2177.633 ; gain = 98.953 ; free physical = 1017 ; free virtual = 10506
+INFO: [Common 17-1381] The checkpoint '/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.runs/synth_1/au_top_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file au_top_0_utilization_synth.rpt -pb au_top_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  6 01:55:54 2020...
