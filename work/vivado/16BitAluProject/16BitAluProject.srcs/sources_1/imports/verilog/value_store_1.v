@@ -68,18 +68,18 @@ module value_store_1 (
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
-      M_flipB_q <= 1'h0;
+      M_flipA_q <= 1'h0;
     end else begin
-      M_flipB_q <= M_flipB_d;
+      M_flipA_q <= M_flipA_d;
     end
   end
   
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
-      M_flipA_q <= 1'h0;
+      M_flipB_q <= 1'h0;
     end else begin
-      M_flipA_q <= M_flipA_d;
+      M_flipB_q <= M_flipB_d;
     end
   end
   

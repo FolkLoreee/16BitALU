@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
-| Date         : Fri Nov  6 01:56:43 2020
-| Host         : folkloreee-LUNAR-14 running 64-bit Ubuntu 20.04.1 LTS
+| Tool Version : Vivado v.2020.1.1 (win64) Build 2960000 Wed Aug  5 22:57:20 MDT 2020
+| Date         : Fri Nov  6 14:32:22 2020
+| Host         : Caydens-Razer-Blade running 64-bit major release  (build 9200)
 | Command      : report_methodology -file au_top_0_methodology_drc_routed.rpt -pb au_top_0_methodology_drc_routed.pb -rpx au_top_0_methodology_drc_routed.rpx
 | Design       : au_top_0
 | Device       : xc7a35tftg256-1
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 104
+             Violations found: 123
 +-----------+------------------+-------------------------------+------------+
 | Rule      | Severity         | Description                   | Violations |
 +-----------+------------------+-------------------------------+------------+
 | TIMING-17 | Critical Warning | Non-clocked sequential cell   | 19         |
 | TIMING-18 | Warning          | Missing input or output delay | 66         |
-| TIMING-20 | Warning          | Non-clocked latch             | 19         |
+| TIMING-20 | Warning          | Non-clocked latch             | 38         |
 +-----------+------------------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -461,95 +461,190 @@ Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch autotester/out_reg[0] cannot be properly analyzed as its control pin autotester/out_reg[0]/G is not reached by a timing clock
+The latch M_seg_values_reg[0] cannot be properly analyzed as its control pin M_seg_values_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch autotester/out_reg[10] cannot be properly analyzed as its control pin autotester/out_reg[10]/G is not reached by a timing clock
+The latch M_seg_values_reg[10] cannot be properly analyzed as its control pin M_seg_values_reg[10]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#3 Warning
 Non-clocked latch  
-The latch autotester/out_reg[11] cannot be properly analyzed as its control pin autotester/out_reg[11]/G is not reached by a timing clock
+The latch M_seg_values_reg[11] cannot be properly analyzed as its control pin M_seg_values_reg[11]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#4 Warning
 Non-clocked latch  
-The latch autotester/out_reg[12] cannot be properly analyzed as its control pin autotester/out_reg[12]/G is not reached by a timing clock
+The latch M_seg_values_reg[12] cannot be properly analyzed as its control pin M_seg_values_reg[12]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#5 Warning
 Non-clocked latch  
-The latch autotester/out_reg[13] cannot be properly analyzed as its control pin autotester/out_reg[13]/G is not reached by a timing clock
+The latch M_seg_values_reg[13] cannot be properly analyzed as its control pin M_seg_values_reg[13]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#6 Warning
 Non-clocked latch  
-The latch autotester/out_reg[14] cannot be properly analyzed as its control pin autotester/out_reg[14]/G is not reached by a timing clock
+The latch M_seg_values_reg[14] cannot be properly analyzed as its control pin M_seg_values_reg[14]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#7 Warning
 Non-clocked latch  
-The latch autotester/out_reg[15] cannot be properly analyzed as its control pin autotester/out_reg[15]/G is not reached by a timing clock
+The latch M_seg_values_reg[15] cannot be properly analyzed as its control pin M_seg_values_reg[15]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#8 Warning
 Non-clocked latch  
-The latch autotester/out_reg[16] cannot be properly analyzed as its control pin autotester/out_reg[16]/G is not reached by a timing clock
+The latch M_seg_values_reg[16] cannot be properly analyzed as its control pin M_seg_values_reg[16]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#9 Warning
 Non-clocked latch  
-The latch autotester/out_reg[17] cannot be properly analyzed as its control pin autotester/out_reg[17]/G is not reached by a timing clock
+The latch M_seg_values_reg[17] cannot be properly analyzed as its control pin M_seg_values_reg[17]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#10 Warning
 Non-clocked latch  
-The latch autotester/out_reg[18] cannot be properly analyzed as its control pin autotester/out_reg[18]/G is not reached by a timing clock
+The latch M_seg_values_reg[18] cannot be properly analyzed as its control pin M_seg_values_reg[18]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#11 Warning
 Non-clocked latch  
-The latch autotester/out_reg[19] cannot be properly analyzed as its control pin autotester/out_reg[19]/G is not reached by a timing clock
+The latch M_seg_values_reg[19] cannot be properly analyzed as its control pin M_seg_values_reg[19]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#12 Warning
 Non-clocked latch  
-The latch autotester/out_reg[1] cannot be properly analyzed as its control pin autotester/out_reg[1]/G is not reached by a timing clock
+The latch M_seg_values_reg[1] cannot be properly analyzed as its control pin M_seg_values_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#13 Warning
 Non-clocked latch  
-The latch autotester/out_reg[2] cannot be properly analyzed as its control pin autotester/out_reg[2]/G is not reached by a timing clock
+The latch M_seg_values_reg[2] cannot be properly analyzed as its control pin M_seg_values_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#14 Warning
 Non-clocked latch  
-The latch autotester/out_reg[4] cannot be properly analyzed as its control pin autotester/out_reg[4]/G is not reached by a timing clock
+The latch M_seg_values_reg[4] cannot be properly analyzed as its control pin M_seg_values_reg[4]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#15 Warning
 Non-clocked latch  
-The latch autotester/out_reg[5] cannot be properly analyzed as its control pin autotester/out_reg[5]/G is not reached by a timing clock
+The latch M_seg_values_reg[5] cannot be properly analyzed as its control pin M_seg_values_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#16 Warning
 Non-clocked latch  
-The latch autotester/out_reg[6] cannot be properly analyzed as its control pin autotester/out_reg[6]/G is not reached by a timing clock
+The latch M_seg_values_reg[6] cannot be properly analyzed as its control pin M_seg_values_reg[6]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#17 Warning
 Non-clocked latch  
-The latch autotester/out_reg[7] cannot be properly analyzed as its control pin autotester/out_reg[7]/G is not reached by a timing clock
+The latch M_seg_values_reg[7] cannot be properly analyzed as its control pin M_seg_values_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#18 Warning
 Non-clocked latch  
-The latch autotester/out_reg[8] cannot be properly analyzed as its control pin autotester/out_reg[8]/G is not reached by a timing clock
+The latch M_seg_values_reg[8] cannot be properly analyzed as its control pin M_seg_values_reg[8]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#19 Warning
+Non-clocked latch  
+The latch M_seg_values_reg[9] cannot be properly analyzed as its control pin M_seg_values_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch autotester/out_reg[0] cannot be properly analyzed as its control pin autotester/out_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch autotester/out_reg[10] cannot be properly analyzed as its control pin autotester/out_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch autotester/out_reg[11] cannot be properly analyzed as its control pin autotester/out_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch autotester/out_reg[12] cannot be properly analyzed as its control pin autotester/out_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch autotester/out_reg[13] cannot be properly analyzed as its control pin autotester/out_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch autotester/out_reg[14] cannot be properly analyzed as its control pin autotester/out_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch autotester/out_reg[15] cannot be properly analyzed as its control pin autotester/out_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch autotester/out_reg[16] cannot be properly analyzed as its control pin autotester/out_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch autotester/out_reg[17] cannot be properly analyzed as its control pin autotester/out_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch autotester/out_reg[18] cannot be properly analyzed as its control pin autotester/out_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch autotester/out_reg[19] cannot be properly analyzed as its control pin autotester/out_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch autotester/out_reg[1] cannot be properly analyzed as its control pin autotester/out_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch autotester/out_reg[2] cannot be properly analyzed as its control pin autotester/out_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch autotester/out_reg[4] cannot be properly analyzed as its control pin autotester/out_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch autotester/out_reg[5] cannot be properly analyzed as its control pin autotester/out_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch autotester/out_reg[6] cannot be properly analyzed as its control pin autotester/out_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch autotester/out_reg[7] cannot be properly analyzed as its control pin autotester/out_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch autotester/out_reg[8] cannot be properly analyzed as its control pin autotester/out_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
 Non-clocked latch  
 The latch autotester/out_reg[9] cannot be properly analyzed as its control pin autotester/out_reg[9]/G is not reached by a timing clock
 Related violations: <none>

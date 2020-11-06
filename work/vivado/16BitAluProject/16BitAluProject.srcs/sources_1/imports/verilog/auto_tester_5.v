@@ -287,20 +287,20 @@ module auto_tester_5 (
     endcase
   end
   
-  always @(posedge M_counter_q[25+0-:1]) begin
-    if (rst == 1'b1) begin
-      M_state_q <= 1'h0;
-    end else begin
-      M_state_q <= M_state_d;
-    end
-  end
-  
-  
   always @(posedge clk) begin
     if (rst == 1'b1) begin
       M_counter_q <= 1'h0;
     end else begin
       M_counter_q <= M_counter_d;
+    end
+  end
+  
+  
+  always @(posedge M_counter_q[25+0-:1]) begin
+    if (rst == 1'b1) begin
+      M_state_q <= 1'h0;
+    end else begin
+      M_state_q <= M_state_d;
     end
   end
   

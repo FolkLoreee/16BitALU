@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.runs/impl_1/au_top_0.tcl"
+  variable script "D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.runs/impl_1/au_top_0.tcl"
   variable category "vivado_impl"
 }
 
@@ -121,24 +121,24 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 2
+  set_param chipscope.maxJobs 3
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tftg256-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.cache/wt [current_project]
-  set_property parent.project_path /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.xpr [current_project]
-  set_property ip_output_repo /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.cache/wt [current_project]
+  set_property parent.project_path D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.xpr [current_project]
+  set_property ip_output_repo D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.runs/synth_1/au_top_0.dcp
+  add_files -quiet D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.runs/synth_1/au_top_0.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc /home/folkloreee/Documents/16BitAluProject/work/constraint/alchitry.xdc
-  read_xdc /home/folkloreee/Documents/alchitry-labs-1.2.0/library/components/au.xdc
-  read_xdc /home/folkloreee/Documents/16BitAluProject/work/constraint/io.xdc
+  read_xdc D:/Documents/alchitry/16BitALU/work/constraint/alchitry.xdc
+  read_xdc D:/Documents/alchitry/16BitALU/work/constraint/io.xdc
+  read_xdc {{D:/Program Files/Alchitry/Alchitry Labs/library/components/au.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.runs/synth_1/au_top_0.tcl"
+  variable script "D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.runs/synth_1/au_top_0.tcl"
   variable category "vivado_synth"
 }
 
@@ -76,30 +76,30 @@ create_project -in_memory -part xc7a35tftg256-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.cache/wt [current_project]
-set_property parent.project_path /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.xpr [current_project]
+set_property webtalk.parent_dir D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.cache/wt [current_project]
+set_property parent.project_path D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/adder_9.v
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/alu_4.v
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/auto_tester_5.v
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/boolean_10.v
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/button_conditioner_3.v
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/compare_12.v
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/counter_13.v
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/decoder_15.v
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/edge_detector_2.v
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/multi_seven_seg_7.v
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/pipeline_8.v
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/reset_conditioner_6.v
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/seven_seg_14.v
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/shifter_11.v
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/value_store_1.v
-  /home/folkloreee/Documents/16BitAluProject/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/au_top_0.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/adder_9.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/alu_4.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/auto_tester_5.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/boolean_10.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/button_conditioner_3.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/compare_12.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/counter_13.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/decoder_15.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/edge_detector_2.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/multi_seven_seg_7.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/pipeline_8.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/reset_conditioner_6.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/seven_seg_14.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/shifter_11.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/value_store_1.v
+  D:/Documents/alchitry/16BitALU/work/vivado/16BitAluProject/16BitAluProject.srcs/sources_1/imports/verilog/au_top_0.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -110,14 +110,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/folkloreee/Documents/16BitAluProject/work/constraint/alchitry.xdc
-set_property used_in_implementation false [get_files /home/folkloreee/Documents/16BitAluProject/work/constraint/alchitry.xdc]
+read_xdc D:/Documents/alchitry/16BitALU/work/constraint/alchitry.xdc
+set_property used_in_implementation false [get_files D:/Documents/alchitry/16BitALU/work/constraint/alchitry.xdc]
 
-read_xdc /home/folkloreee/Documents/alchitry-labs-1.2.0/library/components/au.xdc
-set_property used_in_implementation false [get_files /home/folkloreee/Documents/alchitry-labs-1.2.0/library/components/au.xdc]
+read_xdc D:/Documents/alchitry/16BitALU/work/constraint/io.xdc
+set_property used_in_implementation false [get_files D:/Documents/alchitry/16BitALU/work/constraint/io.xdc]
 
-read_xdc /home/folkloreee/Documents/16BitAluProject/work/constraint/io.xdc
-set_property used_in_implementation false [get_files /home/folkloreee/Documents/16BitAluProject/work/constraint/io.xdc]
+read_xdc {{D:/Program Files/Alchitry/Alchitry Labs/library/components/au.xdc}}
+set_property used_in_implementation false [get_files {{D:/Program Files/Alchitry/Alchitry Labs/library/components/au.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

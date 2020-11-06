@@ -21,6 +21,8 @@ module au_top_0 (
   
   reg rst;
   
+  reg [19:0] dipswitch;
+  
   wire [16-1:0] M_valuestorer_outA;
   wire [16-1:0] M_valuestorer_outB;
   reg [1-1:0] M_valuestorer_btna;
@@ -146,7 +148,6 @@ module au_top_0 (
     usb_tx = usb_rx;
     led = 8'h00;
     io_led = 24'h000000;
-    M_seg_values = 20'h00000;
     io_seg = ~M_seg_seg;
     io_sel = ~M_seg_sel;
     M_valuestorer_clk = clk;
@@ -176,15 +177,69 @@ module au_top_0 (
         io_led[8+7-:8] = M_myalu_out[8+7-:8];
         io_led[0+7-:8] = M_myalu_out[0+7-:8];
         
-        case (M_myalu_zvn[1+0-:1])
-          1'h0: begin
-            io_seg = 8'hff;
+        case (io_dip[16+0+5-:6])
+          6'h00: begin
+            dipswitch = 20'h5b9de;
           end
-          1'h1: begin
-            io_seg = 8'h06;
+          6'h01: begin
+            dipswitch = 20'h2c29e;
+          end
+          6'h02: begin
+            dipswitch = 20'h7be0d;
+          end
+          6'h18: begin
+            dipswitch = 20'h5bdde;
+          end
+          6'h19: begin
+            dipswitch = 20'h7adee;
+          end
+          6'h1e: begin
+            dipswitch = 20'h04bde;
+          end
+          6'h1f: begin
+            dipswitch = 20'h7825e;
+          end
+          6'h16: begin
+            dipswitch = 20'h9825e;
+          end
+          6'h17: begin
+            dipswitch = 20'h9bc12;
+          end
+          6'h1a: begin
+            dipswitch = 20'h5fbde;
+          end
+          6'h20: begin
+            dipswitch = 20'h2cdbe;
+          end
+          6'h21: begin
+            dipswitch = 20'h2ce5e;
+          end
+          6'h23: begin
+            dipswitch = 20'h2c97e;
+          end
+          6'h33: begin
+            dipswitch = 20'hac53e;
+          end
+          6'h35: begin
+            dipswitch = 20'hac7de;
+          end
+          6'h37: begin
+            dipswitch = 20'hab63e;
           end
           default: begin
-            io_seg = 8'hff;
+            dipswitch = 20'h7455e;
+          end
+        endcase
+        
+        case (M_myalu_zvn[1+0-:1])
+          1'h0: begin
+            M_seg_values = dipswitch;
+          end
+          1'h1: begin
+            M_seg_values = 20'h04232;
+          end
+          default: begin
+            M_seg_values = dipswitch;
           end
         endcase
         if (M_rstDetect_out) begin
@@ -223,18 +278,18 @@ module au_top_0 (
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
-      M_counter_q <= 1'h0;
+      M_state_q <= 1'h0;
     end else begin
-      M_counter_q <= M_counter_d;
+      M_state_q <= M_state_d;
     end
   end
   
   
   always @(posedge clk) begin
     if (rst == 1'b1) begin
-      M_state_q <= 1'h0;
+      M_counter_q <= 1'h0;
     end else begin
-      M_state_q <= M_state_d;
+      M_counter_q <= M_counter_d;
     end
   end
   
