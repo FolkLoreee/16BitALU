@@ -63,7 +63,7 @@ module au_top (
     
     io_led = 3x{{8h00}};    // turn LEDs off
 
-    seg.values = {5h0,5h0,5h0,5h0};
+    // seg.values = {5h0,5h0,5h0,5h0};
     io_seg = ~seg.seg;      // connect segments to the driver
     io_sel = ~seg.sel;      // connect digit select to the driver
      
@@ -89,7 +89,6 @@ module au_top (
     
     //io_led[0][7:0] = myalu.out[7:0];
     //io_led[1][7:0] = myalu.out[15:8];
-    
     case(state.q){
       state.IDLE:
         seg.values = {5h1,5d14,5d13,5d17};

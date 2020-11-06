@@ -101,7 +101,7 @@ module auto_tester (
     
       
     
-    // XOR CODE HERE 
+    // OR CODE HERE 
      state.OR: 
       alu.alufn_signal = 6b011110;
       alu.a = 16b0011001001010000; 
