@@ -12,7 +12,7 @@ module au_top (
   ) {
   
   sig rst;                  // reset signal
-  
+  sig dipswitch[4][5];
   value_store valuestorer;
   
   edge_detector compDetect (#RISE(1) , #FALL(0), .clk(clk));
@@ -60,7 +60,7 @@ module au_top (
     usb_tx = usb_rx;        // loop serial port
     
     led = 8h00;             // turn LEDs off
-    
+  
     io_led = 3x{{8h00}};    // turn LEDs off
 
     // seg.values = {5h0,5h0,5h0,5h0};
@@ -106,10 +106,29 @@ module au_top (
       state.NORMAL:
         io_led[1] = myalu.out[15:8];
         io_led[0] = myalu.out[7:0];
+        case(io_dip[2][5:0]){
+          6b000000: dipswitch = {5d11,5d14,5d14,5d30}; //add
+          6b000001: dipswitch = {5d5, 5d16, 5d20, 5d30}; //sub
+          6b000010: dipswitch = {5d15,5d15,5d16,5d13};  // mult
+          6b011000: dipswitch = {5d11,5d15,5d14,5d30}; // and
+          6b011001: dipswitch = {5d15, 5d11, 5d15, 5d14}; //nand
+          6b011110: dipswitch = {5d0,5d18,5d30,5d30}; //or
+          6b011111: dipswitch = {5d15, 5d0, 5d18, 5d30}; // nor
+          6b010110: dipswitch = {5d19, 5d0, 5d18, 5d30}; // xor
+          6b010111: dipswitch = {5d19, 5d15, 5d0, 5d18}; // xnor
+          6b011010: dipswitch = {5d11, 5d30, 5d30, 5d30}; // A
+          6b100000: dipswitch = {5d5,5d19,5d13,5d30}; //SHL
+          6b100001: dipswitch =  {5d5, 5d19, 5d18, 5d30}; //SHR
+          6b100011: dipswitch = {5d5, 5d18, 5d11, 5d30}; //SRA
+          6b110011: dipswitch = {5d21,5d17,5d9,5d30}; //CMPEQ
+          6b110101: dipswitch = {5d21, 5d17, 5d30, 5d30}; //CMPLT
+          6b110111: dipswitch = {5d21, 5d13, 5d17, 5d30}; //CMPLE
+          default: dipswitch = {5d14,5d17,5d10,5d30}; //default
+        } 
         case(myalu.zvn[1]){
-          0:io_seg=8hff;
-          1:io_seg=8b00000110;
-          default: io_seg=8hff;
+          0:seg.values=dipswitch;
+          1:seg.values={5d0,5d16,5d17,5d18};
+          default: seg.values=dipswitch;
         }
         if (rstDetect.out) {
           state.d = state.IDLE;
