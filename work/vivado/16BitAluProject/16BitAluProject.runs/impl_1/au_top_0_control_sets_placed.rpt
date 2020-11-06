@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1.1 (win64) Build 2960000 Wed Aug  5 22:57:20 MDT 2020
-| Date         : Fri Nov  6 14:31:57 2020
+| Date         : Fri Nov  6 14:40:49 2020
 | Host         : Caydens-Razer-Blade running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file au_top_0_control_sets_placed.rpt
 | Design       : au_top_0
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              53 |           22 |
+| No           | No                    | No                     |              53 |           23 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              51 |           15 |
+| No           | Yes                   | No                     |              51 |           16 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             151 |           56 |
+| Yes          | Yes                   | No                     |             151 |           50 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -74,18 +74,18 @@ Table of Contents
 |           Clock Signal          |                  Enable Signal                 |                 Set/Reset Signal                | Slice Load Count | Bel Load Count | Bels / Slice |
 +---------------------------------+------------------------------------------------+-------------------------------------------------+------------------+----------------+--------------+
 |  clk_IBUF_BUFG                  |                                                | reset_cond/M_reset_cond_in                      |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG                  |                                                |                                                 |                9 |             15 |         1.67 |
+|  clk_IBUF_BUFG                  |                                                |                                                 |                8 |             15 |         1.88 |
 |  clk_IBUF_BUFG                  | valuestorer/conditionerA/E[0]                  | rstCond/M_valuestorer_rst                       |                9 |             16 |         1.78 |
-|  clk_IBUF_BUFG                  | valuestorer/conditionerB/E[0]                  | rstCond/M_valuestorer_rst                       |                9 |             16 |         1.78 |
-|  M_seg_values__0                |                                                |                                                 |                6 |             19 |         3.17 |
-|  autotester/out_reg[19]_i_2_n_0 |                                                |                                                 |                7 |             19 |         2.71 |
-|  autotester/M_counter_q_reg[25] | autotester/FSM_onehot_M_state_q[18]_i_1_n_0    | reset_cond/Q[0]                                 |               13 |             19 |         1.46 |
-|  clk_IBUF_BUFG                  | valuestorer/conditionerA/sel                   | valuestorer/conditionerA/sync/clear             |                5 |             20 |         4.00 |
-|  clk_IBUF_BUFG                  | valuestorer/conditionerB/M_ctr_q[0]_i_2__0_n_0 | valuestorer/conditionerB/sync/M_pipe_q_reg[1]_0 |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG                  | valuestorer/conditionerB/E[0]                  | rstCond/M_valuestorer_rst                       |                6 |             16 |         2.67 |
+|  autotester/out_reg[19]_i_2_n_0 |                                                |                                                 |                8 |             19 |         2.38 |
+|  autotester/M_counter_q_reg[25] | autotester/FSM_onehot_M_state_q[18]_i_1_n_0    | reset_cond/Q[0]                                 |               10 |             19 |         1.90 |
+|  M_seg_values__0                |                                                |                                                 |                7 |             19 |         2.71 |
 |  clk_IBUF_BUFG                  | compCond/M_ctr_q[0]_i_2__1_n_0                 | compCond/sync/clear                             |                5 |             20 |         4.00 |
 |  clk_IBUF_BUFG                  | errorCond/M_ctr_q[0]_i_2__2_n_0                | errorCond/sync/M_pipe_q_reg[1]_0                |                5 |             20 |         4.00 |
 |  clk_IBUF_BUFG                  | rstCond/M_ctr_q[0]_i_2__3_n_0                  | rstCond/sync/M_pipe_q_reg[1]_0                  |                5 |             20 |         4.00 |
-|  clk_IBUF_BUFG                  |                                                | reset_cond/Q[0]                                 |               13 |             47 |         3.62 |
+|  clk_IBUF_BUFG                  | valuestorer/conditionerA/sel                   | valuestorer/conditionerA/sync/clear             |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG                  | valuestorer/conditionerB/M_ctr_q[0]_i_2__0_n_0 | valuestorer/conditionerB/sync/M_pipe_q_reg[1]_0 |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG                  |                                                | reset_cond/Q[0]                                 |               14 |             47 |         3.36 |
 +---------------------------------+------------------------------------------------+-------------------------------------------------+------------------+----------------+--------------+
 
 

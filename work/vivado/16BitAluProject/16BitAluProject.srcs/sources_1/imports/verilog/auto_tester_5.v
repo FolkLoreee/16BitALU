@@ -251,7 +251,7 @@ module auto_tester_5 (
         M_alu_alufn_signal = 6'h37;
         M_alu_a = 16'h000a;
         M_alu_b = 16'h000f;
-        if (M_alu_out == 16'h0001) begin
+        if (M_alu_out == 16'h0000) begin
           out = 20'hab63e;
           M_state_d = END_state;
         end else begin

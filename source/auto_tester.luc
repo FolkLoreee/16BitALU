@@ -240,7 +240,7 @@ module auto_tester (
           alu.alufn_signal = 6b110111;
           alu.a = 16d10;
           alu.b = 16d15;
-          if (alu.out == 16d1) {
+          if (alu.out == 16d0) {
             out = {5d21, 5d13, 5d17, 5d30};
             state.d = state.END;
           }
@@ -249,6 +249,7 @@ module auto_tester (
             state.d = state.ERROR;
           }
     
+        
       state.END:
       out = {5d17,5d15,5d14,5d30};
       alu.a =0;
